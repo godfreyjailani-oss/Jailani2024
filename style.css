@@ -1,0 +1,65 @@
+:root{
+  --green:#2e7d32;
+  --blue:#1e88e5;
+  --light:#f6f9fb;
+  --dark:#0f172a;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu; color:#1f2937; background:var(--light);
+}
+.container{max-width:1100px; margin:0 auto; padding:0 16px}
+.site-header{
+  position:sticky; top:0; z-index:20;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 16px; background:#fff; border-bottom:1px solid #e5e7eb;
+}
+.brand{display:flex; align-items:center; gap:10px; color:var(--dark); text-decoration:none; font-weight:700}
+.site-nav{display:flex; gap:16px}
+.site-nav a{color:#334155; text-decoration:none; padding:8px 10px; border-radius:8px}
+.site-nav a:hover, .site-nav a.active{background:#e8f0fe; color:var(--blue)}
+.nav-toggle{display:none; background:none; border:none; font-size:24px}
+
+.hero{
+  background:linear-gradient(135deg, rgba(46,125,50,.9), rgba(30,136,229,.85)),
+             url('https://source.unsplash.com/1600x800/?farm,agriculture,harvest') center/cover no-repeat;
+  color:#fff; text-align:center;
+}
+.hero-inner{padding:80px 16px}
+.hero h1{font-size:clamp(28px,4vw,40px); margin:0 0 10px}
+.hero p{opacity:.95; margin:0 0 20px}
+.btn{
+  display:inline-block; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:600; transition:.2s;
+}
+.btn.primary{background:#fff; color:var(--green)}
+.btn.primary:hover{transform:translateY(-1px)}
+.btn.ghost{border:2px solid #fff; color:#fff; margin-left:8px}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+
+.products-section{padding:40px 0}
+.products-section h2{text-align:center; margin:0 0 20px}
+.products-grid{
+  display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+.card{background:#fff; border:1px solid #e5e7eb; border-radius:14px; overflow:hidden; box-shadow:0 4px 16px rgba(15,23,42,.06)}
+.card img{width:100%; height:170px; object-fit:cover}
+.card-body{padding:12px 14px}
+.card-body h3{margin:0 0 6px; color:#0f172a; font-size:18px}
+.card-body p{margin:0; color:#475569; font-size:14px}
+
+.contact-cta{background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:20px; margin:30px auto}
+.contact-cta a{color:var(--blue); text-decoration:none}
+.contact-cta a:hover{text-decoration:underline}
+
+.site-footer{padding:18px; text-align:center; color:#64748b}
+
+.reveal{opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease}
+.reveal.visible{opacity:1; transform:none}
+
+/* Mobile */
+@media (max-width: 760px){
+  .site-nav{display:none; position:absolute; top:60px; right:10px; background:#fff; padding:10px; border:1px solid #e5e7eb; border-radius:10px; flex-direction:column; min-width:160px}
+  .site-nav.show{display:flex}
+  .nav-toggle{display:block}
+  .btn.ghost{margin-top:8px}
+}

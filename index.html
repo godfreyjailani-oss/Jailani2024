@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JeyAgro Prime — Bidhaa Bora za Chakula</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="JeyAgro Prime">
+      <!-- Logo ya bluu (SVG) -->
+      <svg width="40" height="40" viewBox="0 0 64 64" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#1e88e5"/>
+            <stop offset="100%" stop-color="#90caf9"/>
+          </linearGradient>
+        </defs>
+        <circle cx="32" cy="32" r="30" fill="url(#g)"/>
+        <path d="M18 36c8-2 12-10 14-16 2 10 8 16 14 18-6 2-12 2-18 0-3 6-6 10-10 10 2-4 0-8 0-12z" fill="#ffffff" opacity="0.9"/>
+      </svg>
+      <span>JeyAgro Prime</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Fungua menyu">&#9776;</button>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Nyumbani</a>
+      <a href="products.html">Bidhaa</a>
+      <a href="about.html">Kuhusu</a>
+      <a href="contact.html">Wasiliana</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Bidhaa Bora za Chakula, Kutoka Shamba Hadi Meza Yako</h1>
+      <p>Mchele, Mahindi, Maharage, Karanga, na Mafuta ya Alizeti — ubora na uaminifu kwa kila hatua.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://wa.me/255687478174" target="_blank" rel="noopener">Wasiliana WhatsApp</a>
+        <a class="btn ghost" href="products.html">Tazama Bidhaa</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-section container">
+    <h2>Bidhaa Zetu</h2>
+    <div class="grid products-grid">
+      <article class="card reveal">
+        <img src="https://source.unsplash.com/600x400/?rice" alt="Mchele safi" loading="lazy" />
+        <div class="card-body">
+          <h3>Mchele Safi</h3>
+          <p>Mchele wa daraja la juu, uliosafishwa kwa viwango vya juu vya ubora.</p>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <img src="https://source.unsplash.com/600x400/?maize,corn" alt="Mahindi bora" loading="lazy" />
+        <div class="card-body">
+          <h3>Mahindi Bora</h3>
+          <p>Mahindi makavu, yaliyohifadhiwa vizuri na tayari kwa matumizi.</p>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <img src="https://source.unsplash.com/600x400/?beans" alt="Maharage aina mbalimbali" loading="lazy" />
+        <div class="card-body">
+          <h3>Maharage</h3>
+          <p>Aina mbalimbali za maharage kwa lishe bora ya kila siku.</p>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <img src="https://source.unsplash.com/600x400/?peanuts" alt="Karanga" loading="lazy" />
+        <div class="card-body">
+          <h3>Karanga</h3>
+          <p>Karanga safi zenye ladha tamu—nzuri kwa vitafunwa na biashara.</p>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <img src="https://source.unsplash.com/600x400/?sunflower,oil" alt="Mafuta ya alizeti" loading="lazy" />
+        <div class="card-body">
+          <h3>Mafuta ya Alizeti</h3>
+          <p>Mafuta halisi ya alizeti, mepesi na yenye afya.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact-cta container">
+    <h2>Wasiliana Nasi</h2>
+    <p>Uliza kuhusu upatikanaji na bei — tutakujibu haraka.</p>
+    <p>
+      Simu/WhatsApp: <a href="https://wa.me/255687478174" target="_blank" rel="noopener">0687 478 174</a> ·
+      Barua pepe: <a href="mailto:godfreyjailani@gmail.com">godfreyjailani@gmail.com</a>
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> JeyAgro Prime. Haki zote zimehifadhiwa.</p>
+  </footer>
+</body>
+</html>
